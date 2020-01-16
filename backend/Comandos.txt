@@ -1,0 +1,92 @@
+#Início Projeto
+yarn init -y
+
+#Express
+yarn add express
+
+#Nodemon
+yarn add nodemon -D
+
+#Eslint
+yarn add eslint -D
+
+yarn eslint --init
+
+3º - To check syntax, find problems, and enforce code style
+
+2º - require/exports
+
+3º - None of these
+
+#Prettier
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+#Fix Eslint
+yarn eslint --fix src --ext .js
+
+#Sequelize
+yarn add sequelize
+yarn add sequelize-cli -D
+
+Dialect mysql = yarn add mysql2@^1.5.2
+
+#Criar Migration
+yarn sequelize migration:create --name=create-users
+
+#Rodar Migration
+yarn sequelize db:migrate
+
+#Se der erro no mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+
+*Comando responsavel por dar acesso ao localhost
+
+#Desfazer última migration
+yarn sequelize db:migrate:undo
+
+#Desfazer todas migration
+yarn sequelize db:migrate:undo:all
+
+#Bcryptjs
+yarn add bcryptjs
+
+#JWT
+yarn add jsonwebtoken
+
+#Yup (Validação dos dados de entrada)
+yarn add yup
+
+#Multer (Upload arquivos)
+yarn add multer
+
+#Date-fns (Trabalhar com datas)
+yarn add date-fns@next
+
+#Mongoose (Mongodb)
+yarn add mongoose
+
+#Nodemailer (Email)
+yarn add nodemailer
+
+#Serviços Email
+Amazon SES
+Mailgun
+Sparkpost
+
+Mailtrap (Dev)
+
+#Template Email
+yarn add express-handlebars nodemailer-express-handlebars
+
+#Sentry
+yarn add @sentry/node@5.11.0
+yarn add express-async-errors
+
+#Youch capturar errors
+yarn add youch
+
+#Variaveis Ambientes
+yarn add dotenv
+
+#Cors
+yarn add cors
